@@ -1,7 +1,7 @@
 Embed interactive learning activities and documents on a website without installing any package or application.
 
-**Embed My** creates an iframe snippet that teachers, instructional designers, and website owners can paste into a page they already manage. 
-The first supported format is **H5P** (`.h5p`) packages. PDF embedding is planned.
+**Embed My** creates an iframe snippet that teachers, instructional designers, and website owners can paste into a page they already manage.
+The only supported format is **H5P** (`.h5p`) packages. PDF embedding is planned.
 
 ## What it is for
 
@@ -26,9 +26,9 @@ Before creating an embed, have:
    https://courses.example.edu/activities/week-1-quiz.h5p
    ```
 
-3. A page where you can paste HTML iframe markup, served over HTTPS.
+3. A page where you can paste HTML iframe markup, served over **HTTPS**.
 
-The H5P file host must allow browsers to fetch the package from another origin (**CORS**). HTTP Range support is recommended for fast startup of large packages, but it is not required.
+The H5P file host must allow browsers to fetch the package from another origin (**CORS**). HTTP Range support is recommended for fast startup of large packages, but not required.
 
 ## Browser support
 
