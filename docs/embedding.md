@@ -26,7 +26,7 @@ Before you start, you need a public HTTPS URL for the `.h5p` file. See [Preparin
   allow="fullscreen"
   style="width: 100%; min-height: 540px; border: 0"
 ></iframe>
-<script src="https://embed-my.org/resizer.js"></script>
+<script src="https://embed-my.org/h5p-resizer.js"></script>
 ```
 
 Use the exact code Embed My generates. It may include additional parameters for a display option you selected.
@@ -37,7 +37,7 @@ The script line lets the frame grow and shrink with the activity: the frame repo
 
 - **Without it**, the frame stays at the height in the `style` attribute and anything taller scrolls inside it.
 - **If your site strips scripts** from pasted HTML, keep the iframe and give it a height that fits the activity.
-- **If the page already includes h5p.org's `h5p-resizer.js`** for its h5p.org embeds, you need no second script: it uses the same protocol.
+- **If the page already includes h5p.org's own `h5p-resizer.js`**, served from h5p.org for its h5p.org embeds, you need no second script: Embed My's file has the same name because it speaks the same protocol.
 
 ## Example: a portfolio page
 

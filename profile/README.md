@@ -27,7 +27,7 @@ Then:
   allow="fullscreen"
   style="width: 100%; min-height: 540px; border: 0"
 ></iframe>
-<script src="https://embed-my.org/resizer.js"></script>
+<script src="https://embed-my.org/h5p-resizer.js"></script>
 ```
 
 Use the exact code Embed My generates, and open the published page in a private window to check it before sharing.
