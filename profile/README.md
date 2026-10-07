@@ -1,10 +1,7 @@
-# Embed My
+Embed interactive learning activities and documents on a website without installing any package or application.
 
-Embed interactive learning activities and documents on a website without installing an LMS.
-
-**Embed My** creates an iframe snippet that teachers, instructional designers, and website owners can paste into a page they already manage. The first supported format is **H5P** (`.h5p`) packages. PDF embedding is planned.
-
-> **Status:** H5P embedding is the initial service. PDF support is a future addition and is not available until it is announced here.
+**Embed My** creates an iframe snippet that teachers, instructional designers, and website owners can paste into a page they already manage. 
+The first supported format is **H5P** (`.h5p`) packages. PDF embedding is planned.
 
 ## What it is for
 
