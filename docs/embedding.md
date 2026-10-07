@@ -6,7 +6,7 @@ Before you start, you need a public HTTPS URL for the `.h5p` file. See [Preparin
 
 ## Create the embed
 
-1. Open [Embed My](https://embed-my.js.org/).
+1. Open [Embed My](https://embed-my.org/).
 2. Choose **H5P package**.
 3. Paste the direct public URL ending in `.h5p`.
 4. Preview the activity.
@@ -20,13 +20,13 @@ Before you start, you need a public HTTPS URL for the `.h5p` file. See [Preparin
 
 ```html
 <iframe
-  src="https://embed-my.js.org/h5p?src=https%3A%2F%2Fcourses.example.edu%2Factivities%2Fweek-1-quiz.h5p"
+  src="https://embed-my.org/h5p?src=https%3A%2F%2Fcourses.example.edu%2Factivities%2Fweek-1-quiz.h5p"
   title="Week 1 knowledge check"
   loading="lazy"
   allow="fullscreen"
   style="width: 100%; min-height: 540px; border: 0"
 ></iframe>
-<script src="https://embed-my.js.org/resizer.js"></script>
+<script src="https://embed-my.org/resizer.js"></script>
 ```
 
 Use the exact code Embed My generates. It may include additional parameters for a display option you selected.
@@ -61,7 +61,7 @@ The activity runs inside the Embed My frame with its own Service Worker. That wo
 Some sites have a Content Security Policy that restricts frames. The embedding site must allow:
 
 ```text
-frame-src https://embed-my.js.org
+frame-src https://embed-my.org
 ```
 
 If the site cannot allow an iframe, link to the activity's Embed My page instead.

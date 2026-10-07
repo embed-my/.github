@@ -18,7 +18,7 @@ Opening the URL in a private browser window should download the package without 
 
 ### CORS (required)
 
-The H5P package is fetched by the Embed My frame on `https://embed-my.js.org`, not by the page it is embedded in, so the file host must allow cross-origin requests from that origin. For publicly shared teaching material, a permissive header is often appropriate:
+The H5P package is fetched by the Embed My frame on `https://embed-my.org`, not by the page it is embedded in, so the file host must allow cross-origin requests from that origin. For publicly shared teaching material, a permissive header is often appropriate:
 
 ```text
 Access-Control-Allow-Origin: *

@@ -2,7 +2,7 @@
 
 ## What Embed My isolates
 
-H5P packages contain JavaScript libraries. The player runs them inside the Embed My iframe, on `embed-my.js.org`, rather than on the website where you paste the iframe. A package loaded through Embed My therefore does not run as JavaScript on your portfolio, school site, or CMS origin, and cannot read that site's cookies or storage. This is especially useful when the embedding site cannot safely host its own H5P player files.
+H5P packages contain JavaScript libraries. The player runs them inside the Embed My iframe, on `embed-my.org`, rather than on the website where you paste the iframe. A package loaded through Embed My therefore does not run as JavaScript on your portfolio, school site, or CMS origin, and cannot read that site's cookies or storage. This is especially useful when the embedding site cannot safely host its own H5P player files.
 
 ## What it does not isolate
 

@@ -6,7 +6,7 @@ Check that:
 
 - the URL is a direct `https://.../*.h5p` URL;
 - opening it in a private browser window downloads the package or shows the archive response;
-- the file host permits cross-origin browser requests (CORS) from `https://embed-my.js.org`;
+- the file host permits cross-origin browser requests (CORS) from `https://embed-my.org`;
 - the URL has not expired and does not require an LMS login.
 
 [Preparing and hosting packages](hosting-packages.md#server-headers) lists the headers to set if you control the host.
@@ -33,7 +33,7 @@ Check that the page containing the iframe is served over `https://`. On `http://
 
 ## The host blocks the iframe
 
-The site's Content Security Policy must allow `frame-src https://embed-my.js.org`. If it cannot, link to the activity's Embed My page instead. See [Sites that restrict iframes](embedding.md#sites-that-restrict-iframes).
+The site's Content Security Policy must allow `frame-src https://embed-my.org`. If it cannot, link to the activity's Embed My page instead. See [Sites that restrict iframes](embedding.md#sites-that-restrict-iframes).
 
 ## Other problems
 

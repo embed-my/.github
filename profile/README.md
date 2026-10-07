@@ -15,19 +15,19 @@ You need:
 
 Then:
 
-1. Open [Embed My](https://embed-my.js.org/) and choose **H5P package**.
+1. Open [Embed My](https://embed-my.org/) and choose **H5P package**.
 2. Paste the direct URL ending in `.h5p` and preview the activity.
 3. Choose display options, copy the generated snippet, and paste it into your site's HTML/embed block.
 
 ```html
 <iframe
-  src="https://embed-my.js.org/h5p?src=https%3A%2F%2Fcourses.example.edu%2Factivities%2Fweek-1-quiz.h5p"
+  src="https://embed-my.org/h5p?src=https%3A%2F%2Fcourses.example.edu%2Factivities%2Fweek-1-quiz.h5p"
   title="Week 1 knowledge check"
   loading="lazy"
   allow="fullscreen"
   style="width: 100%; min-height: 540px; border: 0"
 ></iframe>
-<script src="https://embed-my.js.org/resizer.js"></script>
+<script src="https://embed-my.org/resizer.js"></script>
 ```
 
 Use the exact code Embed My generates, and open the published page in a private window to check it before sharing.
@@ -49,7 +49,7 @@ Embed My intends to offer PDF embeds built on `pdfjs-viewer-element`, with the s
 
 ```html
 <iframe
-  src="https://embed-my.js.org/pdf?src=https%3A%2F%2Ffiles.example.edu%2Fhandbook.pdf"
+  src="https://embed-my.org/pdf?src=https%3A%2F%2Ffiles.example.edu%2Fhandbook.pdf"
   title="Student handbook"
   loading="lazy"
   style="width: 100%; min-height: 700px; border: 0"
