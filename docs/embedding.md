@@ -12,7 +12,7 @@ Before you start, you need a public HTTPS URL for the `.h5p` file. See [Preparin
 4. Preview the activity.
 5. Choose display options:
    - a **title** for the frame, which screen readers announce;
-   - H5P's own **toolbar** under the activity, with a **Rights of use** button that shows the licences recorded in the package and its media, and a **Reuse** button that lets visitors download the package.
+   - the buttons of H5P's own **toolbar** under the activity: **Rights of use**, which shows the licences recorded in the package and its media, and **Reuse**, which lets visitors download the package. Tick neither and the frame shows no toolbar.
 6. Copy the generated snippet.
 7. Paste it into the HTML/embed block of your website and publish the page.
 
