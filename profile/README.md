@@ -1,7 +1,7 @@
 Embed interactive learning activities and documents on a website without installing any package or application.
 
 **Embed My** creates an iframe snippet that teachers, instructional designers, and website owners can paste into a page they already manage.
-The only supported format is **H5P** (`.h5p`) packages. PDF embedding is [planned](#pdfs-planned).
+The only supported format for now is **H5P** (`.h5p`) packages. PDF embedding is planned.
 
 You do **not** need to install Moodle, WordPress, an H5P server, or a JavaScript package on the site where you paste the iframe. Use it for a teaching portfolio, a school, course or department website, a public resource page, a blog or documentation site, or any CMS page that accepts an iframe but cannot install an H5P plugin.
 
@@ -43,21 +43,6 @@ Use the exact code Embed My generates, and open the published page in a private 
 | [Accessibility](https://github.com/embed-my/.github/blob/main/docs/accessibility.md) | What Embed My provides and what activity authors must check |
 | [Troubleshooting](https://github.com/embed-my/.github/blob/main/docs/troubleshooting.md) | Common problems and how to report one |
 
-## PDFs (planned)
-
-Embed My intends to offer PDF embeds built on `pdfjs-viewer-element`, with the same paste-an-iframe workflow:
-
-```html
-<iframe
-  src="https://embed-my.org/pdf?src=https%3A%2F%2Ffiles.example.edu%2Fhandbook.pdf"
-  title="Student handbook"
-  loading="lazy"
-  style="width: 100%; min-height: 700px; border: 0"
-></iframe>
-```
-
-This example is illustrative only until PDF support is released. PDF files will have similar requirements: a direct public HTTPS URL, CORS access, and no confidential data in the query string.
-
 ## Open source and licences
 
 The H5P player behind Embed My is [h5p-offline-player](https://github.com/missing-elements/h5p-offline-player), an open-source, browser-only H5P player: it reads the `.h5p` archive in the browser through a Service Worker, with no server-side extraction. Its repository documents the player in depth.
@@ -68,4 +53,5 @@ The project is independent and is not affiliated with or endorsed by H5P Group. 
 
 ## Get help
 
-For bug reports and feature requests, open an issue in the relevant [Embed My repository](https://github.com/embed-my). The [troubleshooting guide](https://github.com/embed-my/.github/blob/main/docs/troubleshooting.md#reporting-a-problem) lists what to include.
+For bug reports and feature requests, open an issue in the relevant [Embed My repository](https://github.com/embed-my). 
+The [troubleshooting guide](https://github.com/embed-my/.github/blob/main/docs/troubleshooting.md#reporting-a-problem) lists what to include.
