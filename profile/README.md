@@ -10,7 +10,7 @@ You do **not** need to install Moodle, WordPress, an H5P server, or a JavaScript
 You need:
 
 1. An H5P package (`.h5p`) that you are entitled to share.
-2. A public **HTTPS** URL for that file that allows cross-origin requests (**CORS**), for example `https://courses.example.edu/activities/week-1-quiz.h5p`.
+2. A public **HTTPS** URL for that file that allows cross-origin requests (**CORS**), for example `https://embed-my.github.io/samples/quiz.h5p`.
 3. A page served over **HTTPS** where you can paste HTML iframe markup.
 
 Then:
@@ -21,13 +21,13 @@ Then:
 
 ```html
 <iframe
-  src="https://embed-my.org/h5p?src=https%3A%2F%2Fcourses.example.edu%2Factivities%2Fweek-1-quiz.h5p"
-  title="Week 1 knowledge check"
+  src="https://embed-my.github.io/h5p?src=https://embed-my.github.io/samples/quiz.h5p"
+  title="Sample quiz"
   loading="lazy"
   allow="fullscreen"
   style="width: 100%; min-height: 540px; border: 0"
 ></iframe>
-<script src="https://embed-my.org/h5p-resizer.js"></script>
+<script src="https://embed-my.github.io/h5p-resizer.js"></script>
 ```
 
 Use the exact code Embed My generates, and open the published page in a private window to check it before sharing.
@@ -36,12 +36,12 @@ Use the exact code Embed My generates, and open the published page in a private 
 
 | Guide | What it covers |
 |---|---|
-| [Embedding an activity](https://github.com/embed-my/.github/blob/main/docs/embedding.md) | Display options, the resizer script, browser support, sites that restrict iframes, and a pre-publish checklist |
-| [Preparing and hosting packages](https://github.com/embed-my/.github/blob/main/docs/hosting-packages.md) | Where to put the `.h5p` file, CORS and Range headers, packages without libraries, slow video |
-| [Privacy and security](https://github.com/embed-my/.github/blob/main/docs/privacy-and-security.md) | What the iframe isolates, what is saved, cookies, and what you still need to protect |
-| [Results, xAPI and grades](https://github.com/embed-my/.github/blob/main/docs/results-and-xapi.md) | Why scores do not reach a gradebook, and how a page can receive xAPI statements |
-| [Accessibility](https://github.com/embed-my/.github/blob/main/docs/accessibility.md) | What Embed My provides and what activity authors must check |
-| [Troubleshooting](https://github.com/embed-my/.github/blob/main/docs/troubleshooting.md) | Common problems and how to report one |
+| [Embedding an activity](https://embed-my.org/docs/embedding) | Display options, the resizer script, browser support, sites that restrict iframes, and a pre-publish checklist |
+| [Preparing and hosting packages](https://embed-my.org/docs/hosting-packages) | Where to put the `.h5p` file, CORS and Range headers, packages without libraries, slow video |
+| [Privacy and security](https://embed-my.org/docs/privacy-and-security) | What the iframe isolates, what is saved, cookies, and what you still need to protect |
+| [Results, xAPI and grades](https://embed-my.org/docs/results-and-xapi) | Why scores do not reach a gradebook, and how a page can receive xAPI statements |
+| [Accessibility](https://embed-my.org/docs/accessibility) | What Embed My provides and what activity authors must check |
+| [Troubleshooting](https://embed-my.org/docs/troubleshooting) | Common problems and how to report one |
 
 ## Open source and licences
 
@@ -53,5 +53,5 @@ The project is independent and is not affiliated with or endorsed by H5P Group. 
 
 ## Get help
 
-For bug reports and feature requests, open an issue in the relevant [Embed My repository](https://github.com/embed-my). 
-The [troubleshooting guide](https://github.com/embed-my/.github/blob/main/docs/troubleshooting.md#reporting-a-problem) lists what to include.
+For bug reports and feature requests, open an issue where the problem lives: the activity not playing or playing wrong is the player, [h5p-offline-player](https://github.com/missing-elements/h5p-offline-player/issues); the snippet, preview or page is the [website](https://github.com/embed-my/embed-my.github.io/issues); these guides are [embed-my/.github](https://github.com/embed-my/.github/issues). [What to include](docs/troubleshooting.md#reporting-a-problem). 
+The [troubleshooting guide](https://embed-my.org/docs/troubleshooting#reporting-a-problem) lists what to include.
