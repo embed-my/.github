@@ -1,12 +1,15 @@
-Embed interactive H5P activities on a website without installing any plugin or application there.
+Check that an H5P file plays, right in your browser.
 
-**Embed My** turns a link to an H5P package (`.h5p`) into an iframe snippet that teachers, instructional designers and website owners paste into a page they already manage: a teaching portfolio, a school, course or department website, a public resource page, a blog, or any CMS page that accepts an iframe but cannot take an H5P plugin. H5P is the only format for now; PDF documents are planned.
+**Embed My** plays an H5P package (`.h5p`) from a link, with nothing to install, and says what the player found: the content type and licence, whether the libraries were in the file, and whether the host serves it in a way browsers can use. It is for authors, teachers and developers who want to know a package works before they upload it to an LMS or share it.
+
+As a free extra, it also writes an iframe snippet to show the activity on a public page. That comes with no guarantees: see [What it is not](#what-it-is-not).
 
 ## What you need
 
-1. **A complete `.h5p` package you are allowed to share.** Exports from H5P.com and h5p.org usually leave the libraries out and will not play anywhere else; choose a complete export, or check the file in the preview first. See [Preparing and hosting packages](https://embed-my.org/docs/hosting-packages#packages-and-library-files).
-2. **Somewhere to host the file.** Embed My keeps no copy, so the `.h5p` has to sit on a web host that serves it over `https://` to any site (a header called CORS). Google Drive and OneDrive share links do not; the free hosts below do, and the [hosting guide](https://embed-my.org/docs/hosting-packages#free-places-to-put-the-file) has the steps for each.
-3. **A page served over `https://` where you can paste HTML**, such as an HTML, Embed or Custom HTML block.
+1. **An `.h5p` package.** Exports from H5P.com and h5p.org usually leave the libraries out; Embed My adds them from the H5P hub's library set as the activity loads, so those play too. See [Preparing and hosting packages](https://embed-my.org/docs/hosting-packages#packages-and-library-files).
+2. **A public `https://` link to it.** Embed My keeps no copy, so the `.h5p` has to sit on a web host that serves it to browsers on other sites (a header called CORS). Google Drive and OneDrive share links do not; the free hosts below do, and the [hosting guide](https://embed-my.org/docs/hosting-packages#free-places-to-put-the-file) has the steps for each.
+
+For the optional snippet you also need a page served over `https://` where you can paste HTML.
 
 ### Free places to put the file
 
@@ -21,9 +24,9 @@ Checked on 9 October 2026; the [guide](https://embed-my.org/docs/hosting-package
 
 ## Quick start
 
-1. Open [embed-my.org](https://embed-my.org/) and paste the direct link to your `.h5p` file. If it plays in the preview, it will play on your page.
-2. Set a title and the display options, and copy the snippet.
-3. Paste it into your page's HTML block, publish, and open the page in a private window to check it.
+1. Open [embed-my.org](https://embed-my.org/), paste the direct link to your `.h5p` file and press **Check**.
+2. Watch it play, and read what the player found under the preview. A package that plays here will very likely play in an LMS too; an LMS can run older libraries or changes of its own, so try it there before a lesson.
+3. Optionally, set a title and the display options, copy the snippet, paste it into a public page's HTML block, and open the page in a private window to check it.
 
 ```html
 <iframe
@@ -36,12 +39,14 @@ Checked on 9 October 2026; the [guide](https://embed-my.org/docs/hosting-package
 <script src="https://embed-my.github.io/h5p-resizer.js"></script>
 ```
 
-Use the exact code Embed My generates. The snippet points at `embed-my.github.io`, an address the project keeps for as long as it is on GitHub, so an embed does not depend on the `embed-my.org` domain.
+Use the exact code Embed My generates. The snippet points at `embed-my.github.io`, not at `embed-my.org`, so an embed does not depend on that domain.
 
 ## What it is not
 
+- **Not a service with guarantees.** It is a free tool kept by one person, with no service agreement. Embeds are meant to keep working, but nothing promises it.
+- **Not ready for a data-protection review.** A snippet makes each visitor's browser contact GitHub and keeps the player's files on the device; there is no data-processing agreement to sign. Many schools and companies cannot accept that under their data-protection rules. For their pages, run [the player](https://github.com/missing-elements/h5p-offline-player) on a host they control. See [Privacy and security](https://embed-my.org/docs/privacy-and-security#data-protection).
 - **Not file hosting.** Your package stays on your host; Embed My only points at it.
-- **Not a gradebook.** No accounts, no learner records, and scores reach no LMS. A developer can [receive xAPI statements](https://embed-my.org/docs/results-and-xapi) on the embedding page.
+- **Not a gradebook.** No learner records, and scores reach no LMS.
 - **Not saved progress.** Reloading the page starts the activity over.
 - **Not for private material.** The package link is visible in your page's HTML, so treat the file as public.
 
@@ -49,7 +54,7 @@ Use the exact code Embed My generates. The snippet points at `embed-my.github.io
 
 | Repository | What it is |
 |---|---|
-| [website](https://github.com/embed-my/website) | [embed-my.org](https://embed-my.org/): the page that writes the snippet, with the live preview, and the guides under `/docs` |
+| [website](https://github.com/embed-my/website) | [embed-my.org](https://embed-my.org/): the page that checks a package and writes the optional snippet, and the guides under `/docs` |
 | [embed-my.github.io](https://github.com/embed-my/embed-my.github.io) | The player origin the snippet points at: the `/h5p` frame, `h5p-resizer.js` and the sample packages |
 | [.github](https://github.com/embed-my/.github) | This profile and the organisation's settings |
 
@@ -59,21 +64,25 @@ All three are MIT. The player inside the frame is [h5p-offline-player](https://g
 
 | Guide | What it covers |
 |---|---|
-| [Embedding an activity](https://embed-my.org/docs/embedding) | Display options, the resizer script, browser support, sites that restrict iframes, and a pre-publish checklist |
 | [Preparing and hosting packages](https://embed-my.org/docs/hosting-packages) | Where to put the `.h5p` file, CORS and Range headers, packages without libraries, slow video |
-| [Privacy and security](https://embed-my.org/docs/privacy-and-security) | What the iframe isolates, what is saved, cookies, and what you still need to protect |
-| [Results, xAPI and grades](https://embed-my.org/docs/results-and-xapi) | Why scores do not reach a gradebook, and how a page can receive xAPI statements |
-| [Accessibility](https://embed-my.org/docs/accessibility) | What Embed My provides and what activity authors must check |
+| [Privacy and security](https://embed-my.org/docs/privacy-and-security) | What the iframe isolates, what is saved, cookies, data protection, and what you still need to protect |
 | [Troubleshooting](https://embed-my.org/docs/troubleshooting) | Common problems and how to report one |
+
+## With an AI assistant
+
+The player's repository ships [agent skills](https://www.skills.sh/missing-elements/h5p-offline-player) for Claude Code, Cursor, Copilot, Codex and the rest. `h5p-verify` plays a package in a real H5P runtime in a headless browser and reports start-up, errors, missing libraries and a screenshot: the same check as embed-my.org, without a link. The others make a package's video start at once (`h5p-normalize`) and put the player on a site of your own (`h5p-player-setup`).
+
+```bash
+npx skills add missing-elements/h5p-offline-player --skill h5p-verify   # the check
+npx skills add missing-elements/h5p-offline-player                      # all three
+```
 
 ## Licences
 
 The player is MIT. The H5P core runtime it loads inside the frame comes from [h5p-php-library](https://github.com/h5p/h5p-php-library) and is GPL-3.0, published as [`@missing-elements/h5p-runtime`](https://www.npmjs.com/package/@missing-elements/h5p-runtime); its [licence](https://embed-my.github.io/assets/runtime-LICENSE.txt) and [notices](https://embed-my.github.io/assets/runtime-NOTICE.txt) are served beside it, and the player's [NOTICE.md](https://github.com/missing-elements/h5p-offline-player/blob/main/packages/player/NOTICE.md) gives the full account. The content inside a package carries its own licence, which the **Rights of use** button shows when the toolbar is on.
 
-The project is independent and is not affiliated with or endorsed by H5P Group. “H5P” is a trademark of H5P Group.
+Embed My is independent and is not affiliated with or endorsed by H5P Group. “H5P” is a trademark of H5P Group.
 
 ## Get help and support
 
 Open an issue where the problem lives: the activity not playing or playing wrong is the player, [h5p-offline-player](https://github.com/missing-elements/h5p-offline-player/issues); the snippet, the preview, the page or the guides are the [website](https://github.com/embed-my/website/issues); the frame itself or the sizing script is the [player origin](https://github.com/embed-my/embed-my.github.io/issues). Not sure? Pick the website. The [troubleshooting guide](https://embed-my.org/docs/troubleshooting#reporting-a-problem) lists what to include.
-
-Embed My is free, with no accounts and no advertising. If it saved you a plugin or a licence, the [support section](https://embed-my.org/#support) on the site lists ways to give something back.
