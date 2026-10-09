@@ -10,7 +10,7 @@ Embed interactive H5P activities on a website without installing any plugin or a
 
 ### Free places to put the file
 
-Checked on 9 October 2026; the [guide](https://embed-my.org/docs/hosting-packages#free-places-to-put-the-file) has the steps and what does not work.
+Checked on 9 October 2026; the [guide](https://embed-my.org/docs/hosting-packages#free-places-to-put-the-file) has the steps for each. Google Drive and OneDrive share links do not work.
 
 | Host | Free allowance | You upload with | Starts before the download ends | Largest file |
 |---|---|---|---|---|
@@ -18,7 +18,6 @@ Checked on 9 October 2026; the [guide](https://embed-my.org/docs/hosting-package
 | **GitHub** public repository | 1 GB per repository | the GitHub website | yes | 25 MB from the browser |
 | **Zenodo** | 50 GB per record | the Zenodo website | yes | no stated limit |
 | **Backblaze B2** | 10 GB | the Backblaze website, after one CORS setting | yes | no stated limit |
-| **Cloudflare Pages** | 500 uploads a month | drag and drop in the dashboard | no | 25 MB |
 
 ## Quick start
 
