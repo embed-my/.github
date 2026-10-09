@@ -5,8 +5,20 @@ Embed interactive H5P activities on a website without installing any plugin or a
 ## What you need
 
 1. **A complete `.h5p` package you are allowed to share.** Exports from H5P.com and h5p.org usually leave the libraries out and will not play anywhere else; choose a complete export, or check the file in the preview first. See [Preparing and hosting packages](https://embed-my.org/docs/hosting-packages#packages-and-library-files).
-2. **Somewhere to host the file.** Embed My keeps no copy, so the `.h5p` has to sit on a web host that serves it over `https://` to any site (a header called CORS). A share link from Google Drive, Dropbox or OneDrive does not work. GitHub Pages and most web hosting do; the [hosting guide](https://embed-my.org/docs/hosting-packages) says what to check.
+2. **Somewhere to host the file.** Embed My keeps no copy, so the `.h5p` has to sit on a web host that serves it over `https://` to any site (a header called CORS). Google Drive and OneDrive share links do not; the free hosts below do, and the [hosting guide](https://embed-my.org/docs/hosting-packages#free-places-to-put-the-file) has the steps for each.
 3. **A page served over `https://` where you can paste HTML**, such as an HTML, Embed or Custom HTML block.
+
+### Free places to put the file
+
+Checked on 9 October 2026; the [guide](https://embed-my.org/docs/hosting-packages#free-places-to-put-the-file) has the steps and what does not work.
+
+| Host | Free allowance | You upload with | Starts before the download ends | Largest file |
+|---|---|---|---|---|
+| **Dropbox** Basic, with one edit to the link | 2 GB; 20 GB of link traffic a day | the Dropbox website or app | yes | no stated limit |
+| **GitHub** public repository | 1 GB per repository | the GitHub website | yes | 25 MB from the browser |
+| **Zenodo** | 50 GB per record | the Zenodo website | yes | no stated limit |
+| **Backblaze B2** | 10 GB | the Backblaze website, after one CORS setting | yes | no stated limit |
+| **Cloudflare Pages** | 500 uploads a month | drag and drop in the dashboard | no | 25 MB |
 
 ## Quick start
 
