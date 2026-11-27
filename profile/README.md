@@ -1,6 +1,6 @@
 Apps that make and play H5P activities, with no H5P server.
 
-**Embed My** builds apps on Missing Elements' open-source [H5P player and tools](https://github.com/missing-elements/h5p-toolkit): an activity is built and played in the person's browser, with a `.h5p` file for Moodle or any other H5P site, and nothing they make is kept by us.
+**EmbedMy** builds apps on Missing Elements' open-source [H5P player and tools](https://github.com/missing-elements/h5p-toolkit): an activity is built and played in the person's browser, with a `.h5p` file for Moodle or any other H5P site, and nothing they make is kept by us.
 
 ## Apps
 
